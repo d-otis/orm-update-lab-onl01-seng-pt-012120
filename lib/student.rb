@@ -44,7 +44,7 @@ class Student
     SQL
     res = DB[:conn].execute(sql, name)[0]
     binding.pry
-    Student.new()
+    Student.new(res[0], res[1], res[2])
   end
   
   def update

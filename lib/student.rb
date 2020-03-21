@@ -43,6 +43,7 @@ class Student
       SELECT * FROM students WHERE name = ?
     SQL
     res = DB[:conn].execute(sql, name)
+    binding.pry
     Student.new()
   end
   
